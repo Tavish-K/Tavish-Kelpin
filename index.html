@@ -3,43 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Simple HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #5ed4ea;
+            color: #333; /* Default text color */
+        }
+        h1 {
+            color: #007bff; /* Heading color */
+        }
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <body style="background-color: #5ed4ea;">
+    <h1>Welcome to My Simple HTML Page</h1>
 
-    <header>
-        <h1>Welcome to My Landing Page</h1>
-        <p>This is a simple landing page hosted on GitHub Pages.</p>
-    </header>
+    <div class="info-section">
+        <h2>Info Section</h2>
+        <p>This is a simple HTML page with the ability to change the background color and text color.</p>
+        <p>You can customize the colors as you like!</p>
+    </div>
 
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend urna eget lectus volutpat, nec gravida nisi convallis.</p>
-        </section>
+    <form>
+        <label for="background-color">Background Color:</label>
+        <input type="color" id="background-color" onchange="changeBackgroundColor(this.value)">
+        
+        <label for="text-color">Text Color:</label>
+        <input type="color" id="text-color" onchange="changeTextColor(this.value)">
+    </form>
 
-        <section>
-            <h2>Services</h2>
-            <p>Our services include:</p>
-            <ul>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li>Digital Marketing</li>
-            </ul>
-        </section>
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
 
-        <section>
-            <h2>Contact Us</h2>
-            <p>Feel free to contact us for inquiries:</p>
-            <p>Email: contact@example.com</p>
-            <p>Phone: 123-456-7890</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 My Landing Page</p>
-    </footer>
+        function changeTextColor(color) {
+            document.body.style.color = color;
+        }
+    </script>
 </body>
 </html>
