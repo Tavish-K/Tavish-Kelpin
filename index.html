@@ -3,51 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>My HTML Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #5ed4ea;
-            color: #fff; /* Default text color */
         }
         h1 {
-            color: #007bff; /* Heading color */
+            color: #333;
         }
         .info-section {
-            background-color: #fff;
+            background-color: #f4f4f4;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        p {
+            color: #666;
+        }
     </style>
 </head>
 <body>
-    <h1>Tavish Kelpin</h1>
+    <h1>Welcome to My HTML Page</h1>
 
     <div class="info-section">
-        <h2>Tavish Kelpin</h2>
-        <p>I am a 2nd AC working in the film industry.</p>
-        <p>Contact me here</p>
+        <h2>Info Section</h2>
+        <p>This is a simple HTML page.</p>
+        <p>Feel free to add more content to customize your page!</p>
     </div>
-
-    <form>
-        <label for="background-color">Background Color:</label>
-        <input type="color" id="background-color" onchange="changeBackgroundColor(this.value)">
-        
-        <label for="text-color">Text Color:</label>
-        <input type="color" id="text-color" onchange="changeTextColor(this.value)">
-    </form>
-
-    <script>
-        function changeBackgroundColor(color) {
-            document.body.style.backgroundColor = color;
-        }
-
-        function changeTextColor(color) {
-            document.body.style.color = color;
-        }
-    </script>
 </body>
 </html>
